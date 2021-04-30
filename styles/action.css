@@ -1,0 +1,560 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+
+}
+.intro{
+
+    background-color: #006c70;
+    color: #e7f1f1 ;
+    width: 40rem;
+    height: 12rem;
+    position: relative;
+    left:28.5%;
+    top: 25px;
+    
+}
+
+.upper{
+    background-color: #ebebeb;
+    width: 900px;
+    position: relative;
+    left:23%;
+    
+}
+
+
+.lower{
+    background-color: #ebebeb;
+    width: 50rem;
+    position: relative;
+    left:23%;
+}
+
+.imgbox{
+    display: grid;
+    height: 100%;
+}
+
+.center-fit{
+  max-width: 916px;
+  max-height: 250px;
+  margin: auto;
+  border: 5px solid #fdfcdc;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.center-fit:hover {
+    opacity: 0.7;
+    
+}
+
+
+.center-fit1{
+    max-width: 50vw;   /*default = 916px*/
+    max-height: 50vh;  /* default = 250px*/ 
+    margin: auto;
+    border: 5px solid #fdfcdc;
+}
+
+
+html,
+.root{
+    padding: 0;
+    margin: 0;
+    font-size:18px;
+}
+
+body{
+    font-size:1rem;
+    line-height:1.4;
+    padding: 0;
+}
+section{
+    padding-top:0rem;
+    width:50%;
+    margin:auto;
+}
+
+details[open] summary ~ *{
+    animation:open 0.3s ease-in-out;
+}
+@keyframes open{
+     0%{
+        opacity: 0;
+     }
+     100%{
+         opacity:1;
+     }
+}
+
+details summary::-webkit-details-marker{
+    display: none;
+}
+
+details summary{
+    width:100%;
+    padding:1.5rem 0;
+    border-top:1px solid white;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 300;
+    list-style: none;
+}
+
+
+details summary:after{
+    content: "^";
+    color: black;
+    position: absolute;
+    font-size: 1.75rem;
+    line-height: 0;
+    margin-top: 0.75rem;
+    right: 0 ;
+    font-weight: 200;
+    transform-origin: center;
+    transition:200ms linear;
+    top: 75%;
+    right: 45%;
+    transform:rotate(180deg);
+    transition: 0.0s;
+    
+    }
+
+
+details[open] summary:after{
+    transform:rotate(0deg);
+    font-size: 2rem;
+}
+
+
+
+   
+
+details summary{
+    font-family: 'Segoe UI';
+    font-size: 1.40rem;
+    outline:0;
+    color:black;
+    font-weight: 600;
+}
+
+details p{
+    font-size: 1.35rem;
+    margin : 0 0 1rem;
+    padding-top: 1rem;
+    font-family: 'Segoe UI';
+    color:black;
+}
+
+a{
+   
+    margin : 0 0 1rem;
+    padding-top: 1rem;
+    font-family: 'Segoe UI';
+    color:black;
+}
+
+.title{
+    font-family: 'Segoe UI';
+    color:black;
+    font-size: 1.45rem;
+    font-weight: 1000;
+}
+
+.lower h1 {
+    font-family: 'Segoe UI';
+    color:black;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+.lower p {
+    font-size: 1.35rem;
+    margin : 0 0 1rem;
+    padding-top: 1rem;
+    font-family: 'Segoe UI';
+    color:black;
+
+}
+
+.container p
+{
+    color: black;
+    font-size: 20pt;
+}
+ 
+.text
+{
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+    color: black;
+    font-weight: 600;
+    
+}
+
+.container
+{
+    margin: 150px auto;
+    width: 50%;
+    padding: 8px;
+    float: left;
+    position:relative; 
+    top:-130px;
+
+    
+}
+
+.container img
+{
+ float: left;
+ padding: 0 10px 0 0;
+}
+
+
+
+
+.container2 p
+{
+    color: black;
+    font-size: 20pt;
+    
+}
+ 
+.text2
+{
+    font-family: 'Segoe UI';
+    font-size: 12pt;
+    color: black;
+    font-weight: 600;
+    
+}
+
+.container2
+{
+    margin: 150px auto;
+    width: 50%;
+    padding: 8px;
+    float: left;
+    position:relative; 
+    top:-380px;
+
+    
+}
+
+.bee{
+    float: left;
+    height: 50vh;
+    width: 25vw;
+    padding: 30px 0 0 0;
+}
+.bee-text h2{
+    padding: 25px 0 0 0;
+}
+.bee-text p{
+    font-size: 1rem;
+    padding: 0 0 0 0;
+}
+
+.bamboo{
+    
+    float: right;
+    padding: 125px 0 0 0;
+    height: 50vh;
+    width: 25vw;
+}
+
+.bamboo-text h2{
+    padding: 130px 0 0 0;
+}
+.bamboo-text p{
+    font-size: 1rem;
+    padding: 20px 0 0 0;
+}
+
+.cassava{
+    
+    padding: 10px 0 0 0px;
+    height: 50vh;
+    width: 25vw;
+}
+
+.cassava-text p{
+    font-size: 1rem;
+}
+
+.grocery{
+    float: left;
+    
+    height: 48vh;
+    width: 26vw;
+}
+
+.grocery-text h2{
+    padding: 3px 0 0 0;
+   
+}
+
+
+.grocery-text p{
+    font-size: 1rem;
+    padding: -120px 0 0 0;
+}
+
+
+/*media query for mobile*/
+@media only screen and (min-width:360px)
+and (max-width:414px) 
+{
+    .navbar ul li:nth-child(3){
+        position: relative;
+        left:61px;
+    
+    }
+    .navbar ul li:nth-child(4){
+        position: relative;
+        left: 45px;
+    }
+    .navbar a{
+        padding: 10px 10px;
+        font-size: 9px;
+    }
+    
+    /*LOGO*/
+    .image{
+        width: 50px;
+        height: 50px;
+        margin-left: -25px;
+    
+    }
+
+
+    .intro{
+
+        background-color: #006c70;
+        color: #e7f1f1 ;
+        font-size: 19px;
+        width: 20rem;
+        height: 10rem;
+        position: relative;
+        left:5.5%;
+        top: 25px;
+        
+    }
+    
+    .upper{
+        background-color: #ebebeb;
+        width: 370px;
+        position: relative;
+        left:4%;
+        
+    }
+
+
+
+    details p {
+       font-size: 20px;
+       margin-right: -35%;
+       margin-left: -20%;
+    }
+
+    .lower{
+        background-color: #ebebeb;
+        width: 370px;
+        position: relative;
+        left:4%;
+    }
+
+
+    .bee{
+     
+        height: 37vh;
+        width: 70vw;
+        padding: 30px 0 0 0;
+        
+    }
+    .bee-text h2{
+        padding: 30px 0 0 0;
+        
+    }
+    .bee-text p{
+        font-size: 1rem;
+        padding: 10px 0 0 0;
+    }
+
+    .bamboo{
+    
+        float: left;
+        padding: 30px 0 0 0;
+        height: 45vh;
+        width: 70vw;
+    }
+    
+    .bamboo-text h2{
+        padding: 110px 0 0 0;
+    }
+    .bamboo-text p{
+        font-size: 1rem;
+        padding: 20px 0 0 0;
+    }
+
+    .cassava{
+        float:left;
+        padding: 80 0 0 0px;
+        height: 38vh;
+        width: 78vw;
+    }
+    
+    
+
+    .cassava-text p{
+        font-size: 1rem;
+        float: left
+        
+    }
+
+
+    .grocery{
+        float: left;
+        
+        height: 33vh;
+        width: 70vw;
+    }
+    
+    .grocery-text h2{
+        padding: 8px 0 0 0;
+       
+    }
+    
+    
+    .grocery-text p{
+        font-size: 1rem;
+        padding: -20px 0 0 0;
+    }
+
+
+}
+
+
+/*media query for ipad*/
+@media only screen and (min-width:768px)
+and (max-width:800px) 
+{
+
+    .navbar ul li:nth-child(3){
+        position: relative;
+        left:20px;
+    
+    }
+    .navbar ul li:nth-child(4){
+        position: relative;
+        left: 20px;
+    }
+    .navbar a{
+        padding: 10px 10px;
+        font-size: 9px;
+    }
+
+    .intro{
+
+        background-color: #006c70;
+        color: #e7f1f1 ;
+        width: 40rem;
+        height: 12rem;
+        position: relative;
+        left:70.5%;
+        top: 25px;
+        
+    }
+    
+    .upper{
+        background-color: #ebebeb;
+        width: 900px;
+        position: relative;
+        left:60%;
+        
+    }
+
+    .lower{
+        background-color: #ebebeb;
+        width: 50rem;
+        position: relative;
+        left:60%;
+    }
+
+
+
+    .bee{
+        float: left;
+        height: 35vh;
+        width: 40vw;
+        padding: 30px 0 0 0;
+    }
+    .bee-text h2{
+        padding: 30px 0 0 0;
+        
+    }
+    .bee-text p{
+        font-size: 1rem;
+        padding: 10px 0 0 0;
+    }
+
+    .bamboo{
+    
+        float: right;
+        padding: 100px 0 0 0;
+        height: 35vh;
+        width: 40vw;
+    }
+    
+    .bamboo-text h2{
+        padding: 110px 0 0 0;
+    }
+    .bamboo-text p{
+        font-size: 1rem;
+        padding: 20px 0 0 0;
+    }
+
+    .cassava{
+    
+        padding: 20px 0 0 0px;
+        height: 40vh;
+        width: 68vw;
+    }
+    
+    .cassava-text p{
+        font-size: 1rem;
+    }
+
+
+    .grocery{
+        float: left;
+        
+        height: 32vh;
+        width: 50vw;
+    }
+    
+    .grocery-text h2{
+        padding: 8px 0 0 0;
+       
+    }
+    
+    
+    .grocery-text p{
+        font-size: 1rem;
+        padding: 0 0 0 0;
+    }
+
+
+
+
+}

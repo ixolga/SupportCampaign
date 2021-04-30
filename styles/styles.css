@@ -1,0 +1,581 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 430vh;
+  width: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Navbar*/
+.logo {
+  /*padding-left: 1.5em;*/
+  padding-left: 70px;
+}
+.logo .image {
+  width: 3.125em;
+  height: 3.125em;
+}
+nav {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #006c70;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.875em;
+  text-align-last: center;
+}
+/*Burger*/
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px;
+  transition: all 0.3s ease-in;
+}
+
+/* VIDEO BANNER */
+.video-banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: inherit;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.video-banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.video-banner .content {
+  position: absolute;
+  top: 20%;
+  z-index: 2;
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.video-banner .content h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.video-banner .content p {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 60px;
+  line-height: 40px;
+  text-align: justify;
+}
+
+/*SLIDESHOW*/
+.slideshow-container {
+  height: 462px;
+  width: 750px;
+  overflow: hidden;
+
+  position: absolute;
+  top: 130%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+}
+
+.slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slideshow-nav {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar {
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.bar:hover {
+  background: #fff;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+/* WHATS HAPPENING */
+
+.happening-section .container {
+  top: 130%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+
+  position: absolute;
+  width: 700px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.happening-section .content {
+  max-width: 65%;
+  text-align: justify;
+  height: 300px;
+
+  background-color: #006c70;
+  padding: 5rem;
+}
+
+.happening-section .content p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.happening-section .content h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+/* JOIN THE MOVEMENT */
+
+.movement-section h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+
+  position: relative;
+  top: 1%;
+}
+
+.movement-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 240%;
+}
+
+.movement-section .container {
+  position: absolute;
+  height: 180vh;
+  width: 950px;
+  background-color: #ebebeb;
+}
+
+.countries {
+  position: absolute;
+  top: 10%;
+  padding: 5vh;
+}
+
+/* BANGLADESH */
+
+.movement-section .content-1 h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 2rem;
+
+  position: relative;
+  left: 50%;
+}
+
+.movement-section .content-1 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 1.2rem;
+
+  position: relative;
+  max-width: 55%;
+  left: 50%;
+}
+
+.movement-section .content-1 img {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+
+  max-width: 380px;
+}
+
+/* INDIA */
+
+.movement-section .content-2 h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 2rem;
+
+  position: absolute;
+  top: 95%;
+  left: 5%;
+}
+
+.movement-section .content-2 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 1.2rem;
+
+  max-width: 45%;
+
+  position: absolute;
+  top: 110%;
+  left: 5%;
+}
+
+.movement-section .content-2 img {
+  position: absolute;
+  top: 100%;
+  left: 55%;
+  margin-left: 5px;
+
+  max-width: 380px;
+}
+
+/* CANADA */
+
+.movement-section .content-3 h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 2rem;
+
+  position: absolute;
+  top: 190%;
+  left: 50%;
+}
+
+.movement-section .content-3 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 1.2rem;
+
+  max-width: 55%;
+  position: absolute;
+  top: 205%;
+  left: 50%;
+}
+
+.movement-section .content-3 img {
+  position: absolute;
+  top: 190%;
+  left: 5%;
+  margin-left: 5px;
+
+  max-width: 380px;
+}
+
+/* UK */
+
+.movement-section .content-4 h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 2rem;
+
+  position: absolute;
+  top: 300%;
+  left: 5%;
+}
+
+.movement-section .content-4 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 1.2rem;
+
+  max-width: 48%;
+  position: absolute;
+  top: 315%;
+  left: 5%;
+}
+
+.movement-section .content-4 img {
+  position: absolute;
+  top: 300%;
+  left: 55%;
+  margin-left: 5px;
+
+  max-width: 380px;
+}
+
+/* CHINA */
+
+.movement-section .content-5 h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 2rem;
+
+  position: absolute;
+  top: 395%;
+  left: 50%;
+}
+
+.movement-section .content-5 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 1.2rem;
+
+  max-width: 55%;
+  position: absolute;
+  top: 410%;
+  left: 50%;
+}
+
+.movement-section .content-5 img {
+  position: absolute;
+  top: 400%;
+  left: 5%;
+  margin-left: 5px;
+
+  max-width: 380px;
+}
+
+/* PLASTIC ALTERNATIVES */
+
+.alternatives-section .container {
+  height: 55vh;
+  width: 100%;
+  background-color: #006c70;
+
+  position: absolute;
+  top: 320%;
+  left: 0;
+  z-index: -1;
+
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alternatives-section .container h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+
+  position: relative;
+}
+
+/* IMAGES */
+
+.image-container {
+  position: absolute;
+  top: 350%;
+  left: 0;
+
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.image h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 2rem;
+}
+
+.image img {
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+/*query for ipad*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .alternatives-section .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .logo {
+    padding-left: 0.25em;
+  }
+  /* Nav-links */
+  .nav-links {
+    position: absolute;
+    z-index: 99;
+    right: -10px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #006c70;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .gray .container {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .green .container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .white .container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+    padding-top: 2px;
+    padding-bottom: 100px;
+    padding-bottom: 7px;
+  }
+
+  p {
+    line-height: 16px;
+  }
+
+  .img {
+    width: 100%;
+    padding: 20px 90px;
+  }
+  .icon {
+    width: 10px;
+    height: 10px;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
